@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="heading">
+        🧩Reaction Game🧩
+    </header>
+    <div class="main">
+        <div class="left">
+            <section class="guide">
+                <h1 class="guideheading">☞How to Play the Game</h1>
+                <div class="guidebox">
+                    <ul class="guidelist">
+                        <li>Begin the game by clicking the "Start" button. You'll see a 3x3 grid.</li>
+                        <li>One of the grid cells will highlight.Click on the highlighted cell within 2 seconds.</li>
+                        <li>By clicking 10*level-n grids,you will have a chance to play next level.</li>
+                        <li>By advancing to levels,the grid size increasess by 1 means-grid size (n+1)x(n+1)</li>
+                        <li>Time you have got decreses by 0.1 seconds and after level20 time is always 0.1s</li>
+                        <li>You can see leaderboard,at what time you played the best.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="leaderboard">
+                <button class="button"  id="refresh-leaderboard">Leader Board</button>
+                <ul id="leaderboard-list" class="leaderboardlist"> 
+                    <!--
+                    <li class="leaders">
+                    <div class="details">
+                      <span class="icon">🏆</span>
+                      <span class="value">${entry.score}</span>
+                    </div>
+                    <div class="details">
+                      <span class="icon">🗓️</span>
+                      <span class="value">${entry.date}</span>
+                    </div>
+                  </li> -->
+                </ul>
+            </section>
+        </div>
+       <div class="right">
+            <div class="buttonbox">
+                <div class="score">
+                    <span class="scorelabel">Level Score:</span>
+                     <span class="scorevalue" id="score">0</span>
+                </div>
+                <button class="startbutton button">start</button>
+                <div class="score">
+                    <span class="scorelabel">Total Score:</span>
+                    <span class="scorevalue" id="totalscore">0</span>
+                </div>
+            </div>
+            <div class="grid-container"></div>
+       </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

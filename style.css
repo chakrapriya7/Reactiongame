@@ -1,0 +1,160 @@
+body{
+    background-color: #f4f4f4;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10rem;
+}
+.heading{
+    font-size: 3vmax;
+    color:#4CAF50;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.score{
+  font-size: 2rem;
+
+}
+.scorevalue{ 
+    color: #4CAF50;
+    font-weight: bold;
+}
+.grid-container{
+    display: grid;
+    padding: 10px;
+    height:30vh;
+    width:30vw;
+}
+.grid-item{
+  aspect-ratio: 1; 
+  border: 1px solid #000; 
+}
+.highlight{
+    background-color: #4CAF50;
+}
+.buttonbox{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button{
+    background-color: #4CAF50;
+    border-radius: 8px;
+    border: none;
+    width:12rem;
+    height:4rem;
+    margin-right: 10px;
+    font-weight: bold;
+}
+/*Leaderboard*/
+  .leaderboard{
+    max-width: 50vmax; 
+  }
+  .leaders{
+  background-color:white;
+  border-radius: 5px;
+  padding: 0.1rem 0.2rem;
+  margin: 0.75rem;
+  height: 3rem;
+  cursor: pointer;
+  display:flex;
+  justify-content: space-around;
+  border-left: 5px solid #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  .leaderboardlist{
+    list-style: none;
+  }
+  
+  .details{
+    display: flex;   
+  }
+  
+  .icon{
+    font-size: 1.8rem;
+    margin-right: 0.01rem;
+    height: 0.28rem;
+  }
+  
+  .value{
+    font-size: 1.5rem;
+    margin-right: 0.01rem;
+  }
+
+/* For Guide purpose*/
+.guide{
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.guideheading{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem; 
+    border-bottom: 2px solid #4CAF50; }
+
+.guidebox{
+    background-color: #ffffff;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.guidelist{
+    list-style-type: none;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    font-size: 1.3rem;
+}
+
+.guidelist li{
+    margin-bottom: 0.75rem; 
+    line-height: 1.6;
+}
+@media (max-width:900px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heading{
+  font-size: 3vmax;
+  color:#4CAF50;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.button{
+  margin-bottom: 2rem;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.grid-container{
+  display: grid;
+  height:300px;
+  width:300px;
+  place-self: center;
+  
+}}
